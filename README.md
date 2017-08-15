@@ -1,1 +1,1 @@
-# essential-to-git
+# git essential
