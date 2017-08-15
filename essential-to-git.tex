@@ -1,4 +1,11 @@
 \documentclass{beamer}
+
+\usepackage{graphicx}
+\usepackage{fontspec}
+\usepackage[scale=0.9,sfdefault,light]{roboto}
+
+\graphicspath{ {img/} }
+
 \usetheme{Marburg}
 \usecolortheme{whale}
 
@@ -9,7 +16,12 @@
 \begin{document}
 
 \begin{frame}
-    \Large{Hello}
+    \begin{figure}
+        \center
+        \includegraphics{git-logo.eps}
+        \label{fig:git-logo}
+    \end{figure}
+    \center{Essential to Git}
 \end{frame}
 
 \end{document}
