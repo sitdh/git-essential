@@ -3,6 +3,9 @@
 \usepackage{graphicx}
 \usepackage{fontspec}
 \usepackage[scale=0.9,sfdefault,light]{roboto}
+\usepackage{listings}
+
+\definecolor{unusedline}{gray}{0.7}
 
 \graphicspath{ {img/} }
 
@@ -34,7 +37,8 @@
     \end{figure}
 \end{frame}
 
-\begin{frame}{Outline}
+\begin{frame}
+    \frametitle{Outline}
     \tableofcontents
 \end{frame}
 
@@ -46,8 +50,8 @@
     \end{figure}
 \end{frame}
 
-\section{init}
-\begin{frame}{Command flow}
+\section{Activity flow}
+\begin{frame}{Activity flow}
     \begin{figure}
         \center
         \includegraphics[width=.9\textwidth]{git-command-flow}
@@ -55,18 +59,95 @@
     \end{figure}
 \end{frame}
 
-\section{clone}
+\subsection{init}
+\begin{frame}{init}
+    \Large{\$ git init}
+    \begin{figure}
+        \center
+        \includegraphics[width=.9\textwidth]{git-init}
+        \label{fig:git-init}
+    \end{figure}
+\end{frame}
 
-\section{add}
+\begin{frame}{init -\,-bare}
+    \Large{\$ git init -\,-bare}
+    \begin{figure}
+        \center
+        \includegraphics[width=.9\textwidth]{git-init--bare}
+        \label{fig:git-init--bare}
+    \end{figure}
+\end{frame}
 
-\section{commit}
+\subsection[clone]{clone}
+\begin{frame}{clone}
+    \Large{\$ git clone \em{"Repo" "Dest"}} \newline
+    \Large{\$ git clone git-ess gitess}
+    \begin{figure}
+        \center
+        \includegraphics[width=.9\textwidth]{git-clone}
+        \label{fig:git-clone}
+    \end{figure}
+\end{frame}
 
-\section{pull}
+\begin{frame}{clone}
+    \begin{figure}
+        \center
+        \includegraphics<1>[width=.7\textwidth]{git-clone-action-0}
+        \includegraphics<2>[width=.7\textwidth]{git-clone-action-1}
+    \end{figure}
+\end{frame}
 
-\section{push}
+\begin{frame}{Activity flow}
+    \begin{figure}
+        \center
+        \includegraphics[width=.9\textwidth]{git-command-flow-1}
+        \label{fig:git-command-flow-1}
+    \end{figure}
+\end{frame}
+
+\subsection[add]{add}
+\begin{frame}{add}
+    \only<1->{\textcolor<2>{gray}{\Large{\$ git add \em{/opt/path}} \newline\newline}}
+    \only<2>{\Large{\$ git add .}}
+\end{frame}
+
+\begin{frame}{unstage \& staged}
+    \begin{figure}
+        \center
+        \includegraphics[width=.9\textwidth]{project-changed-1}
+        \label{fig:project-changed-1}
+    \end{figure}
+\end{frame}
+
+\begin{frame}{unstage \& staged}
+    \begin{figure}
+        \center
+        \includegraphics[width=.9\textwidth]{unstage-and-staged}
+        \label{fig:unstage-and-staged}
+    \end{figure}
+\end{frame}
+
+\subsection{commit}
+\begin{frame}{commit}
+    \Large{\$ git commit -m "Commit message"}
+    \begin{figure}
+        \center
+        \includegraphics[width=.9\textwidth]{commit-files}
+        \label{fig:commit-files}
+    \end{figure}
+\end{frame}
+
+\subsection{pull}
+\begin{frame}{pull}
+\end{frame}
+
+\subsection{push}
+\begin{frame}{push}
+\end{frame}
 
 \section{Checkup}
-\begin{frame}{Checkup}
+\begin{frame}
+    \frametitle{Checkup}
     \begin{figure}
         \center
         \includegraphics[width=.9\textwidth]{git-workflow}
