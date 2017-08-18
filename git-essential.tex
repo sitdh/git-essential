@@ -80,8 +80,12 @@
 
 \subsection[clone]{clone}
 \begin{frame}{clone}
-    \Large{\$ git clone \em{"Repo" "Dest"}} \newline
-    \Large{\$ git clone git-ess gitess}
+    \only<1->{
+        \textcolor<2->{gray}{\,\,\,\,\Large{\$ git clone \em{"Repo" ["Dest"]}} \newline}
+    }
+    \only<2->{
+        \Large{\$ git clone \textcolor<3>{red}{\,git-ess} \textcolor<4>{red}{\,gitess}}
+    }
     \begin{figure}
         \center
         \includegraphics[width=.9\textwidth]{git-clone}
