@@ -80,6 +80,14 @@
 
 \subsection[clone]{clone}
 \begin{frame}{clone}
+    \begin{figure}
+        \center
+        \includegraphics<1>[width=.7\textwidth]{git-clone-action-0}
+        \includegraphics<2>[width=.7\textwidth]{git-clone-action-1}
+    \end{figure}
+\end{frame}
+
+\begin{frame}{clone}
     \only<1->{
         \textcolor<2->{gray}{\,\,\,\,\Large{\$ git clone \em{"Repo" ["Dest"]}} \newline}
     }
@@ -90,14 +98,6 @@
         \center
         \includegraphics[width=.9\textwidth]{git-clone}
         \label{fig:git-clone}
-    \end{figure}
-\end{frame}
-
-\begin{frame}{clone}
-    \begin{figure}
-        \center
-        \includegraphics<1>[width=.7\textwidth]{git-clone-action-0}
-        \includegraphics<2>[width=.7\textwidth]{git-clone-action-1}
     \end{figure}
 \end{frame}
 
@@ -126,12 +126,65 @@
 
 \subsection{commit}
 \begin{frame}{commit}
-    \Large{\$ git commit -m "Commit message"}
-    \begin{figure}
-        \center
-        \includegraphics[width=.9\textwidth]{commit-files}
-        \label{fig:commit-files}
-    \end{figure}
+    \only<1->{
+        \Large{\textcolor<3->{gray}{\$ git commit -am \textcolor<2>{blue}{"Commit message"}}} \newline
+    }
+    \only<3->{
+        \Large{\$ git commit -m \textcolor<4->{blue}{"Update lib version for issue \#32"} \textcolor<5->{red}{config.json}
+        }
+    }
+\end{frame}
+
+\begin{frame}[t]{commit message}
+    \begin{enumerate}
+        \item<1-> \textcolor<3->{gray}{Separate subject from body with a blank line}
+        \item<3-> \textcolor<6->{gray}{Limit the subject line to 50 characters \newline 
+            and wrap the body at 72 characters}
+        \item<6-> \textcolor<9->{gray}{Capitalize the subject line}
+        \item<9-> \textcolor<10->{gray}{Do not end the subject line with a period}
+        \item<10-> \textcolor<13->{gray}{Use the imperative mood in the subject line}
+        \item<13-> Use the body to explain \texttt{what} and \texttt{why} vs. \texttt{how}
+    \end{enumerate}
+
+    % Heading 
+    \only<2>{
+        {\textbf Derezz the master control program} \newline
+
+        MCP turned out to be evil and had become intent on world domination.
+        This commit throws Tron's disc into MCP (causing its deresolution)
+        and turns it back into a chess game.
+    }
+
+    % Limit
+    \only<4>{
+        {\par
+        MCP turned out to be evil and had become intent on world domination. This commit throws Tron's disc into MCP (causing its deresolution) and turns it back into a chess game.}
+    }
+
+    \only<5>{Derezz the master control program}
+
+    % Capitalize
+    \only<7-8>{\textcolor<8>{red}{fix issue \#27} \newline}
+    \only<8>{Fix issue \#27}
+
+    % Imperative mood
+    \only<11>{\em "Spoken or written as if giving a command or instruction"}
+    \only<12>{ 
+        \begin{itemize}
+            \item Close the door
+            \item Take out the trash
+            \item Merge branch 'feature'
+        \end{itemize}
+    }
+
+    % What, Why and How
+    \only<14>{
+        \begin{itemize}
+            \item What side effects does this change have? 
+            \item Why is this change necessary?
+            \item How does it address the issue?
+        \end{itemize}
+    }
 \end{frame}
 
 \subsection{pull}
