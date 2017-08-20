@@ -61,8 +61,8 @@
     \end{figure}
 \end{frame}
 
-\begin{frame}{init -\,-bare}
-    \Large{\$ git init -\,-bare}
+\begin{frame}{init -{}-bare}
+    \Large{\$ git init -{}-bare}
     \begin{figure}
         \center
         \includegraphics[width=.9\textwidth]{git-init--bare}
@@ -93,6 +93,27 @@
     \end{figure}
 \end{frame}
 
+\begin{frame}{Exercise I: Create and clone \textbf{local repository}}
+
+    \only<1>{
+        \textbf{Create local repository}
+        \begin{enumerate}[\$]
+            \item cd /opt/path
+            \item mkdir git-repo \&\& cd "\$\_" 
+            \item git init -{}-bare
+        \end{enumerate}
+    }
+
+    \only<2->{
+        \textbf{Clone local repository}
+        \begin{enumerate}[\$]
+            \item \Large{cd ~}
+            \item \Large{git clone \textbf<3>{/opt/path/git-repo} \textbf<4>{git\_repo}}
+        \end{enumerate}
+    }
+
+\end{frame}
+
 \subsection[add]{add}
 \begin{frame}{Activity flow}
     \begin{figure}
@@ -119,6 +140,14 @@
 \begin{frame}{add}
     \only<1->{\textcolor<2>{gray}{\Large{\$ git add \em{/opt/path}} \newline\newline}}
     \only<2>{\Large{\$ git add .}}
+\end{frame}
+
+\begin{frame}{Exercise II: Add files to index}
+    \begin{enumerate}[\$]
+        \item cd \~/git\_repo
+        \item<2> touch config.json
+        \item<2> touch phpunit.xml
+    \end{enumerate}
 \end{frame}
 
 \subsection[commit]{commit}
