@@ -42,14 +42,6 @@
     \tableofcontents
 \end{frame}
 
-\begin{frame}{Hello}
-    \begin{figure}
-        \center
-        \includegraphics[height=.8\textheight]{git-action}
-        \label{fig:git-action}
-    \end{figure}
-\end{frame}
-
 \section{Activity flow}
 \begin{frame}{Activity flow}
     \begin{figure}
@@ -142,8 +134,8 @@
     \begin{figure}
         \center
         \includegraphics<1>[width=.8\textwidth]{project-changed-0}
-        \includegraphics<1>[width=.8\textwidth]{project-changed-1}
-        \includegraphics<2>[width=.8\textwidth]{project-changed-2}
+        \includegraphics<2>[width=.8\textwidth]{project-changed-1}
+        \includegraphics<3>[width=.8\textwidth]{project-changed-2}
         \label{fig:project-changed-2}
     \end{figure}
 \end{frame}
@@ -184,7 +176,7 @@
 
     % Heading 
     \only<2>{
-        {\textbf Derezz the master control program} \newline
+        \textbf{Derezz the master control program} \newline
 
         MCP turned out to be evil and had become intent on world domination.
         This commit throws Tron's disc into MCP (causing its deresolution)
@@ -223,10 +215,26 @@
     }
 \end{frame}
 
-\subsection{pull}
+\subsection[pull]{pull}
+\begin{frame}{Activity flow}
+    \begin{figure}
+        \center
+        \includegraphics[width=.9\textwidth]{git-command-flow-3}
+        \label{fig:git-command-flow-3}
+    \end{figure}
+\end{frame}
+
+\begin{frame}{pull - Sync information}
+    \begin{figure}
+        \center
+        \includegraphics<1>[width=.7\textwidth]{git-pulling-information-0}
+        \includegraphics<2>[width=.7\textwidth]{git-pulling-information-1}
+        \label{fig:git-pulling-information}
+    \end{figure}
+\end{frame}
+
 \begin{frame}{pull}
-    \only<1>{Pull}
-    \only<2>{
+    \only{
         \Large{
             \[
                 Pull = Fetch + Merge
@@ -236,6 +244,32 @@
 \end{frame}
 
 \subsection{push}
+\begin{frame}{Activity flow}
+    \begin{figure}
+        \center
+        \includegraphics[width=.9\textwidth]{git-command-flow-4}
+        \label{fig:git-command-flow-4}
+    \end{figure}
+\end{frame}
+
+\section[branch]{branch}
+\begin{frame}{Recommand branches}
+    \begin{figure}
+        \center
+        \includegraphics[height=.8\textheight]{git-recommanded-branches}
+        \label{fig:git-recommanded-branches}
+    \end{figure}
+\end{frame}
+
+\begin{frame}{git-flow}
+    \begin{figure}
+        \center
+        \includegraphics[width=.9\textwidth]{git-flow-commands}
+        \label{fig:git-flow-commands}
+    \end{figure}
+    \center{https://danielkummer.github.io/git-flow-cheatsheet/}
+\end{frame}
+
 \begin{frame}{push}
 \end{frame}
 
@@ -248,6 +282,28 @@
         \caption{https://guides.github.com/introduction/flow/}
         \label{fig:git-workflow}
     \end{figure}
+\end{frame}
+
+\section[workshop]{Workshop}
+\begin{frame}{GitHub - Happy coding}
+    \begin{itemize}
+        \item Create local repository
+        \item Add and commit files
+        \item Create Remote repository on GitHub
+        \item Collaboration overview
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Create local repository}
+\end{frame}
+
+\begin{frame}{Add and commit files}
+\end{frame}
+
+\begin{frame}{Create remote repository on GitHub}
+\end{frame}
+
+\begin{frame}{Collaboration overview}
 \end{frame}
 
 \end{document}
