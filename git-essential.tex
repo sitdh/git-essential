@@ -279,12 +279,30 @@
 \end{frame}
 
 \begin{frame}{pull}
-    \only{
-        \Large{
-            \[
-                Pull = Fetch + Merge
-            \]
-        }
+    \Large{
+        \[
+            Pull = Fetch + Merge
+        \]
+    }
+\end{frame}
+
+\begin{frame}{pull}
+    \begin{figure}
+        \center
+        \includegraphics<1>[width=.8\textwidth]{git-pull-contents-1}
+        \includegraphics<2>[width=.8\textwidth]{git-pull-contents-2}
+        \includegraphics<3>[width=.8\textwidth]{git-pull-contents-3}
+        \label{fig:git-pull-contents}
+    \end{figure}
+\end{frame}
+
+\begin{frame}{pull}
+    \Large{
+        \begin{enumerate}[\$]
+            \item<1-> \textcolor<2->{gray}{git pull \em{<remote>} \em{<branch>}}
+            \item<2-> \textcolor<3->{gray}{git pull \em{origin} \em{master}}
+            \item<3-> git pull -u \em{origin} \em{master}
+        \end{enumerate}
     }
 \end{frame}
 
