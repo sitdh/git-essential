@@ -107,7 +107,7 @@
     \only<2->{
         \textbf{Clone local repository}
         \begin{enumerate}[\$]
-            \item \Large{cd ~}
+            \item \Large{cd \textasciitilde}
             \item \Large{git clone \textbf<3>{/opt/path/git-repo} \textbf<4>{git\_repo}}
         \end{enumerate}
     }
@@ -126,12 +126,12 @@
 \begin{frame}{unstage \& staged}
     \begin{figure}
         \center
-        \includegraphics<1>[width=.8\textwidth]{project-changed-0}
-        \includegraphics<2>[width=.8\textwidth]{project-changed-1}
-        \includegraphics<3>[width=.8\textwidth]{project-changed-2}
-        \includegraphics<4>[width=.8\textwidth]{project-changed-3-2}
-        \includegraphics<5>[width=.8\textwidth]{project-changed-3-1}
-        \includegraphics<6>[width=.8\textwidth]{project-changed-4}
+        \includegraphics<1->[width=.8\textwidth]{project-changed-0}
+        \includegraphics<2->[width=.8\textwidth]{project-changed-1}
+        \includegraphics<3->[width=.8\textwidth]{project-changed-2}
+        \includegraphics<4->[width=.8\textwidth]{project-changed-3-2}
+        \includegraphics<5->[width=.8\textwidth]{project-changed-3-1}
+        \includegraphics<6->[width=.8\textwidth]{project-changed-4}
         \label{fig:project-changed}
     \end{figure}
     \small{https://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository}
@@ -143,11 +143,29 @@
 \end{frame}
 
 \begin{frame}{Exercise II: Add files to index}
-    \begin{enumerate}[\$]
-        \item cd \~/git\_repo
-        \item<2> touch config.json
-        \item<2> touch phpunit.xml
-    \end{enumerate}
+    \only<1-3>{
+        \begin{enumerate}[\$]
+            \item<1-> cd  \textasciitilde/git\_repo
+            \item<2-> touch .gitignore {\textbackslash} \newline
+                \&\& echo ".DS\_Store{\textbackslash}nbower\_components" > .gitignore
+            \item<3-> touch composer.json
+            \item<3-> touch phpunit.xml
+            \item<3-> touch phpunit.phar
+        \end{enumerate}
+    }
+    
+    \only<4->{
+        \begin{enumerate}[\$]
+            \item<4-> git add .
+            \item<5-> git commit -m \textbf{'Add ignore list'} .gitignore 
+            \item<5-> git commit -m \textbf{'Add composer config'} composer.json
+            \item<6-> git commit -am \textbf{'Add testing lib and config'}
+                \begin{enumerate}[-]
+                    \item<7-> \em{phpunit.xml}
+                    \item<7-> \em{phpunit.phar}
+                \end{enumerate}
+        \end{enumerate}
+    }
 \end{frame}
 
 \subsection[commit]{commit}
