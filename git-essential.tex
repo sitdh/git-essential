@@ -143,29 +143,16 @@
 \end{frame}
 
 \begin{frame}{Exercise II: Add files to index}
-    \only<1-3>{
-        \begin{enumerate}[\$]
-            \item<1-> cd  \textasciitilde/git\_repo
-            \item<2-> touch .gitignore {\textbackslash} \newline
-                \&\& echo ".DS\_Store{\textbackslash}nbower\_components" > .gitignore
-            \item<3-> touch composer.json
-            \item<3-> touch phpunit.xml
-            \item<3-> touch phpunit.phar
-        \end{enumerate}
-    }
+    \begin{enumerate}[\$]
+        \item<1-> cd  \textasciitilde/git\_repo
+        \item<2-> touch .gitignore {\textbackslash} \newline
+            \&\& echo ".DS\_Store{\textbackslash}nbower\_components" > .gitignore
+        \item<3-> touch composer.json
+        \item<3-> touch phpunit.xml
+        \item<3-> touch phpunit.phar
+        \item<4-> git add .
+    \end{enumerate}
     
-    \only<4->{
-        \begin{enumerate}[\$]
-            \item<4-> git add .
-            \item<5-> git commit -m \textbf{'Add ignore list'} .gitignore 
-            \item<5-> git commit -m \textbf{'Add composer config'} composer.json
-            \item<6-> git commit -am \textbf{'Add testing lib and config'}
-                \begin{enumerate}[-]
-                    \item<7-> \em{phpunit.xml}
-                    \item<7-> \em{phpunit.phar}
-                \end{enumerate}
-        \end{enumerate}
-    }
 \end{frame}
 
 \subsection[commit]{commit}
@@ -269,6 +256,18 @@
         \includegraphics[width=.9\textwidth]{git-command-flow-3}
         \label{fig:git-command-flow-3}
     \end{figure}
+\end{frame}
+
+\begin{frame}{Exercise III: Commit}
+    \begin{enumerate}[\$]
+        \item<1-> git commit -m \textbf{'Add ignore list'} .gitignore 
+        \item<1-> git commit -m \textbf{'Add composer config'} composer.json
+        \item<2-> git commit -am \textbf{'Add testing lib and config'}
+            \begin{enumerate}[-]
+                \item<3-> \em{phpunit.xml}
+                \item<3-> \em{phpunit.phar}
+            \end{enumerate}
+    \end{enumerate}
 \end{frame}
 
 \begin{frame}{pull - Sync information}
