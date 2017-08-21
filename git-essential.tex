@@ -327,9 +327,41 @@
 \end{frame}
 
 \begin{frame}{Exercise IV: Push the source to remote repo}
+    \begin{enumerate}[\$]
+        \item<1-> \Large{cd {\textasciitilde}/git\_repo}
+        \item<2-> \Large{git pull}
+        \item<3-> \Large{git push -u origin master}
+    \end{enumerate}
 \end{frame}
 
-\section{branch}
+\section{More action}
+
+\begin{frame}{branch}
+    \begin{figure}
+        \center
+        \includegraphics<1>[width=.8\textwidth]{git-branching-0}
+        \includegraphics<2>[width=.8\textwidth]{git-branching-1}
+        \includegraphics<3>[width=.8\textwidth]{git-branching-2}
+        \label{fig:git-branching}
+    \end{figure}
+\end{frame}
+
+\begin{frame}{branch}
+    \begin{enumerate}[\$]
+        \item<1-> \textcolor<2->{gray}{
+                \Large{git checkout \textbf{<-b> <branch\_name> <start\_point>}}}
+        \item<2-> \textcolor<4->{gray}{
+                \Large{git checkout \textbf<3->{-b feature}}}
+        \item<4-> \textcolor<6->{gray}{
+                \Large{git checkout \textbf<4>{-b hotfix} \textbf<5>{1e344ad}}}
+        \item<6-> \Large{git checkout \textbf<6->{hotfix ac021cf}}
+    \end{enumerate}
+\end{frame}
+
+\begin{frame}{merge}
+
+\end{frame}
+
 \begin{frame}{branch}
     \begin{enumerate}[\$]
         \item<1-> git checkout \textbf{[option]} \textbf{[branch\_name]}
