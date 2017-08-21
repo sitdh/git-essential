@@ -188,13 +188,12 @@
 \end{frame}
 
 \begin{frame}{commit}
-    \only<1->{
-        \Large{\textcolor<3->{gray}{\$ git commit -am \textcolor<2>{blue}{"Commit message"}}} \newline
-    }
-    \only<3->{
-        \Large{\$ git commit -m \textcolor<4->{blue}{"Update lib version for issue \#32"} \textcolor<5->{red}{config.json}
-        }
-    }
+    \begin{enumerate}[\$]
+        \item<1-> \Large{\textcolor<3->{gray}{\$ git commit -am \textcolor<2>{blue}{"Commit message"}}}
+        \item<3-> \Large{\$ git commit {\textbackslash}\newline 
+            -m \textcolor<4->{blue}{"Update lib version for issue \#32"} {\textbackslash}\newline 
+            \textcolor<5->{red}{config.json}
+    \end{enumerate}
 \end{frame}
 
 \begin{frame}[t]{commit message}
