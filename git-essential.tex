@@ -177,12 +177,7 @@
 \begin{frame}{commit}
     \begin{figure}
         \center
-        \includegraphics<1>[width=.8\textwidth]{git-commit-flow-1}
-        \includegraphics<2>[width=.8\textwidth]{git-commit-flow-2-1}
-        \includegraphics<3>[width=.8\textwidth]{git-commit-flow-2-2}
-        \includegraphics<4>[width=.8\textwidth]{git-commit-flow-3}
-        \includegraphics<5>[width=.8\textwidth]{git-commit-flow-4}
-        \includegraphics<6>[width=.8\textwidth]{git-commit-flow-4-1}
+        \includegraphics[width=.9\textwidth]{git-commit-flow}
         \label{fig:git-commit-flow}
     \end{figure}
 \end{frame}
@@ -333,14 +328,18 @@
 \end{frame}
 
 \begin{frame}{Exercise IV: Push the source to remote repo}
-    \begin{figure}
-        \center
-        \includegraphics[width=.8\textwidth]{create-a-new-repository}
-        \label{fig:create-a-new-repository}
-    \end{figure}
 \end{frame}
 
 \section{branch}
+\begin{frame}{branch}
+    \begin{enumerate}[\$]
+        \item<1-> git checkout \textbf{[option]} \textbf{[branch\_name]}
+        \item<2-> git checkout \textbf{-b} \textbf{\em{hotfix}}
+        \item<3-> git checkout \textbf<4>{-b} \textbf<4>{\em{hotfix}} 
+            \textbf<5>{\em{341be12}}
+    \end{enumerate}
+\end{frame}
+
 \begin{frame}{Recommended branches}
     \begin{figure}
         \center
