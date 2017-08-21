@@ -126,12 +126,12 @@
 \begin{frame}{unstage \& staged}
     \begin{figure}
         \center
-        \includegraphics<1->[width=.8\textwidth]{project-changed-0}
-        \includegraphics<2->[width=.8\textwidth]{project-changed-1}
-        \includegraphics<3->[width=.8\textwidth]{project-changed-2}
-        \includegraphics<4->[width=.8\textwidth]{project-changed-3-2}
-        \includegraphics<5->[width=.8\textwidth]{project-changed-3-1}
-        \includegraphics<6->[width=.8\textwidth]{project-changed-4}
+        \includegraphics<1>[width=.8\textwidth]{project-changed-0}
+        \includegraphics<2>[width=.8\textwidth]{project-changed-1}
+        \includegraphics<3>[width=.8\textwidth]{project-changed-2}
+        \includegraphics<4>[width=.8\textwidth]{project-changed-3-2}
+        \includegraphics<5>[width=.8\textwidth]{project-changed-3-1}
+        \includegraphics<6>[width=.8\textwidth]{project-changed-4}
         \label{fig:project-changed}
     \end{figure}
     \small{https://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository}
@@ -379,19 +379,29 @@
 \end{frame}
 
 \begin{frame}{Exercise V: Create remote repository on GitHub}
-    \begin{figure}
-        \center
-        \includegraphics[width=.8\textwidth]{create-a-new-repository}
-        \label{fig:create-a-new-repository}
-    \end{figure}
-\end{frame}
+    \only<1>{
+        \begin{figure}
+            \center
+            \includegraphics[width=.8\textwidth]{create-a-new-repository}
+            \label{fig:create-a-new-repository}
+        \end{figure}
+    }
 
-\begin{frame}{Sync remote source}
-    \begin{figure}
-        \center
-        \includegraphics[width=.8\textwidth]{git-get-clone-uri}
-        \label{fig:git-get-clone-uri}
-    \end{figure}
+    \only<2>{
+        \begin{figure}
+            \center
+            \includegraphics[width=.8\textwidth]{create-a-new-repository-1}
+            \label{fig:create-a-new-repository-1}
+        \end{figure}
+    }
+
+    \only<3>{
+        \begin{figure}
+            \center
+            \includegraphics[width=.8\textwidth]{git-get-clone-uri}
+            \label{fig:git-get-clone-uri}
+        \end{figure}
+    }
 \end{frame}
 
 \begin{frame}{Repository URL}
@@ -404,10 +414,18 @@
     \end{itemize}
 \end{frame}
 
+\begin{frame}{Add remote repository}
+    \begin{enumerate}[\$]
+        \item \Large{cd {\textasciitilde}/git\_repo}
+        \item \Large{git remote add origin git@github.com:sitdh/hello-project.git}
+        \item \Large{git push -u origin master}
+    \end{enumerate}
+\end{frame}
+
 \begin{frame}{Error}
     \begin{figure}
         \center
-        \includegraphics[width=.9\textwidth]{git-unrelated-histories}
+        \includegraphics[width=\textwidth]{git-unrelated-histories}
         \label{fig:git-unrelated-histories}
     \end{figure}
 \end{frame}
