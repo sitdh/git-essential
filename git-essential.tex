@@ -359,16 +359,32 @@
 \end{frame}
 
 \begin{frame}{merge}
-
+    \begin{figure}
+        \center
+        \includegraphics<1>[width=.8\textwidth]{git-branching-2}
+        \includegraphics<2>[width=.8\textwidth]{git-branching-3}
+        \includegraphics<3>[width=.8\textwidth]{git-branching-4}
+        \label{fig:git-merging}
+    \end{figure}
 \end{frame}
 
-\begin{frame}{branch}
+\begin{frame}{merge}
+
     \begin{enumerate}[\$]
-        \item<1-> git checkout \textbf{[option]} \textbf{[branch\_name]}
-        \item<2-> git checkout \textbf{-b} \textbf{\em{hotfix}}
-        \item<3-> git checkout \textbf<4>{-b} \textbf<4>{\em{hotfix}} 
-            \textbf<5>{\em{341be12}}
+        \item<1-> \textcolor<2->{gray}{
+                \Large{git merge \textbf{<option> <branch\_name> <commit>}}}
+        \item<2-> \textcolor<4->{gray}{
+                \Large{git merge \textbf<3->{development}}}
+        \item<4-> \textcolor<5->{gray}{
+                \Large{git merge \textbf<4->{development} 1102efd}}
     \end{enumerate}
+
+    \begin{figure}
+        \center
+        \includegraphics<1>[width=.8\textwidth]{git-branching-5}
+        \includegraphics<2->[width=.8\textwidth]{git-branching-3}
+        \label{fig:git-current-branch}
+    \end{figure}
 \end{frame}
 
 \begin{frame}{Recommended branches}
