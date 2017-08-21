@@ -387,21 +387,12 @@
     \end{figure}
 \end{frame}
 
+\section{Best practise}
 \begin{frame}{Recommended branches}
     \begin{figure}
         \center
         \includegraphics[height=.8\textheight]{git-recommended-branches}
         \label{fig:git-recommanded-branches}
-    \end{figure}
-\end{frame}
-
-\section{Best practise}
-\begin{frame}{Best practise}
-    \begin{figure}
-        \center
-        \includegraphics[width=.9\textwidth]{git-workflow}
-        \caption{https://guides.github.com/introduction/flow/}
-        \label{fig:git-workflow}
     \end{figure}
 \end{frame}
 
@@ -412,6 +403,15 @@
         \label{fig:git-flow-commands}
     \end{figure}
     \center{https://danielkummer.github.io/git-flow-cheatsheet/}
+\end{frame}
+
+\begin{frame}{Best practise}
+    \begin{figure}
+        \center
+        \includegraphics[width=.9\textwidth]{git-workflow}
+        \caption{https://guides.github.com/introduction/flow/}
+        \label{fig:git-workflow}
+    \end{figure}
 \end{frame}
 
 \section{Workshop}
@@ -461,9 +461,9 @@
 
 \begin{frame}{Add remote repository}
     \begin{enumerate}[\$]
-        \item \Large{cd {\textasciitilde}/git\_repo}
-        \item \Large{git remote add origin git@github.com:sitdh/hello-project.git}
-        \item \Large{git push -u origin master}
+        \item<1-> \Large{cd {\textasciitilde}/git\_repo}
+        \item<2-> \Large{git remote \textbf{add origin git@github.com:sitdh/hello-project.git}}
+        \item<3-> \Large{git push -u origin master}
     \end{enumerate}
 \end{frame}
 
