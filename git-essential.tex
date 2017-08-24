@@ -42,7 +42,7 @@
     \tableofcontents
 \end{frame}
 
-\section{Intro}
+\section[Intro.]{Introduction}
 \begin{frame}{Why git}
     \begin{itemize}
         \item Collaboration
@@ -51,6 +51,7 @@
             \item Trust your data
         \end{itemize}
         \item Release engineering
+        \item Liteweight branching
         \item Decentralize
     \end{itemize}
 \end{frame}
@@ -170,12 +171,13 @@
 
 \begin{frame}{Exercise II: Add files to index}
     \begin{enumerate}[\$]
-        \item<1->touch .gitignore {\textbackslash} \newline
-            \&\& echo ".DS\_Store{\textcolor{red}{{\textbackslash}n}}bower\_components/" > .gitignore
-        \item<3-> touch composer.json
-        \item<3-> touch phpunit.xml
-        \item<3-> touch phpunit.phar
-        \item<4-> git add .
+        \item<1-> \Large{touch .gitignore {\textbackslash} \&\& \newline 
+          echo ".DS\_Store{\textcolor{red}{{\textbackslash}n}}bower\_components/" \newline
+          > .gitignore}
+        \item<3-> \Large{touch composer.json}
+        \item<3-> \Large{touch phpunit.xml}
+        \item<3-> \Large{touch phpunit.phar}
+        \item<4-> \Large{git add .}
     \end{enumerate}
     
 \end{frame}
