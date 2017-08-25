@@ -34,7 +34,7 @@
         \includegraphics[width=.8\textwidth]{git-profile}
         \label{fig:git-profile}
     \end{figure}
-    \small{https://github.com/sitdh}
+    \center{\small{https://github.com/sitdh}}
 \end{frame}
 
 \begin{frame}
@@ -159,7 +159,7 @@
         \includegraphics[width=.8\textwidth]{project-changed-0}
         \label{fig:project-changed}
     \end{figure}
-    \small{Pro Git 2e}
+    \center{\small{Pro Git 2e}}
 \end{frame}
 
 \begin{frame}{add}
@@ -171,10 +171,10 @@
 
 \begin{frame}{Exercise II: Add files to index}
     \begin{enumerate}[\$]
-        \item<1-> \Large{touch .gitignore {\textbackslash} \&\& \newline 
+        \item<1-> \Large{ 
           echo ".DS\_Store{\textcolor{red}{{\textbackslash}n}}bower\_components/" \newline
           > .gitignore}
-        \item<3-> \Large{touch composer.json}
+        \item<3-> \Large{touch bower.json}
         \item<3-> \Large{touch phpunit.xml}
         \item<3-> \Large{touch phpunit.phar}
         \item<4-> \Large{git add .}
@@ -259,7 +259,7 @@
 \begin{frame}{Exercise III: Commit}
     \begin{enumerate}[\$]
         \item<1-> git commit -m \textbf{'Add ignore list'} .gitignore 
-        \item<1-> git commit -m \textbf{'Add composer config'} composer.json
+        \item<1-> git commit -m \textbf{'Add bower lib'} bower.json
         \item<2-> git commit -am \textbf{'Add testing lib and config'}
             \begin{enumerate}[-]
                 \item<3-> \em{phpunit.xml}
@@ -449,8 +449,14 @@
 \begin{frame}{Add remote repository}
     \begin{enumerate}[\$]
         \item<1-> \Large{cd {\textasciitilde}/git\_repo}
-        \item<2-> \Large{git remote \textbf{add origin git@github.com:sitdh/hello-project.git}}
-        \item<3-> \Large{git push -u origin master}
+        \item<2-> \Large{git remote \textbf{remove origin}}
+        \only<3>{
+            \begin{enumerate}[\$]
+                \item \textcolor{red}{\Large{git remote}}
+            \end{enumerate}
+        }
+        \item<4-> \Large{git remote \textbf{add origin git@github.com:sitdh/hello-project.git}}
+        \item<5-> \Large{git push -u origin master}
     \end{enumerate}
 \end{frame}
 
