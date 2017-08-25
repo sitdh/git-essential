@@ -449,8 +449,14 @@
 \begin{frame}{Add remote repository}
     \begin{enumerate}[\$]
         \item<1-> \Large{cd {\textasciitilde}/git\_repo}
-        \item<2-> \Large{git remote \textbf{add origin git@github.com:sitdh/hello-project.git}}
-        \item<3-> \Large{git push -u origin master}
+        \item<2-> \Large{git remote \textbf{remove origin}}
+        \only<3>{
+            \begin{enumerate}[\$]
+                \item \textcolor{red}{\Large{git remote}}
+            \end{enumerate}
+        }
+        \item<4-> \Large{git remote \textbf{add origin git@github.com:sitdh/hello-project.git}}
+        \item<5-> \Large{git push -u origin master}
     \end{enumerate}
 \end{frame}
 
